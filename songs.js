@@ -1,62 +1,50 @@
-import React from 'react';
-import {Image} from 'react-native';
-import icon1 from './assets/icons/woman-on-her-knees-looking-up.png';
-import icon2 from './assets/icons/woman-on-lotus-position-front-view.png';
-import icon3 from './assets/icons/woman-stretching-arms-and-flexing-legs.png';
-import icon4 from './assets/icons/woman-on-her-knees-looking-up.png';
-import icon5 from './assets/icons/woman-standing-on-one-leg-lifting-left-leg.png';
-import icon6 from './assets/icons/man-standing-on-one-leg.png';
-import icon7 from './assets/icons/woman-stretching-arms-and-flexing-legs.png';
+// https://ibb.co/Y28p2pm
+// https://ibb.co/WxRFnhH
+// https://ibb.co/BGyK8rp
+// https://ibb.co/8xqk6vZ
+// https://ibb.co/WGf1J11
 
 const songs = [
   {
     key: 'Pranayama',
-    icon: <Image source={icon1} alt="Pranayama" />,
+    image: 'https://i.ibb.co/nrfzrz9/woman-on-her-knees-looking-up.png',
     name: 'Pranayama',
-    description: 'Control your breathing',
+    description:
+      'Pranayama is a practice relating to the control and regulation of the breath through specific breathing techniques and exercises. Pranayama exercises help us to clear physical and emotional blocks or obstacles in the body so that the breath, and prana, can flow freely.',
     sound: 'illuminations.mp3',
   },
-
   {
     key: 'Mantra',
-    icon: <Image source={icon2} alt="Mantra" />,
+    image: 'https://i.ibb.co/YRV82CN/woman-on-lotus-position-front-view.png',
     name: 'Mantra',
-    description: 'Repeating words and syllables',
+    description:
+      'A mantra is any word, phrase, or sound that helps to keep your mind focused. Practicing mantras throughout life can be helpful to keep you focused, but they become especially helpful during your yoga and meditation practices',
     sound: 'illuminations.mp3',
   },
   {
     key: 'Vinyasa',
-    icon: <Image source={icon3} alt="Vinyasa" />,
+    image:
+      'https://i.ibb.co/RN34LBF/woman-stretching-arms-and-flexing-legs.png',
     name: 'Vinyasa',
-    description: 'Make each pose at your own pace',
+    description:
+      'Vinyasa is a style of yoga characterized by stringing postures together so that you move from one to another, seamlessly, using breath. Commonly referred to as “flow” yoga, it is sometimes confused with “power yoga“. Vinyasa classes offer a variety of postures and no two classes are ever alike.',
     sound: 'illuminations.mp3',
   },
   {
     key: 'Namaste',
-    icon: <Image source={icon4} alt="Namaste" />,
+    image:
+      'https://i.ibb.co/rpY948r/woman-standing-on-one-leg-lifting-left-leg.png',
     name: 'Namaste',
-    description: 'My soul respects your soul',
-    sound: 'illuminations.mp3',
-  },
-  {
-    key: 'Bandha',
-    icon: <Image source={icon5} alt="Bandha" />,
-    name: 'Bandha',
-    description: 'Tighten and lock your muscles',
+    description:
+      ' Nama means bow, as means I, and te means you. Therefore, namaste literally means "bow me you" or "I bow to you." Learn how to make the Namaste Gesture in Yoga.',
     sound: 'illuminations.mp3',
   },
   {
     key: 'Om',
-    icon: <Image source={icon6} alt="Om" />,
+    image: 'https://i.ibb.co/JmHPJPP/man-standing-on-one-leg.png',
     name: 'Om',
-    description: 'Calm down - Heavens',
-    sound: 'illuminations.mp3',
-  },
-  {
-    key: 'Asana',
-    icon: <Image source={icon7} alt="Asana" />,
-    name: 'Asana',
-    description: 'Pose, pose, pose',
+    description:
+      'Om is a very simple sound with a complex meaning. It is the whole universe coalesced into a single word, representing the union of mind, body, and spirit that is at the heart of yoga. Often chanted three times at the start and at the finish of a yoga session, the sound of om is actually three syllables: a, u, and m.',
     sound: 'illuminations.mp3',
   },
 ];
