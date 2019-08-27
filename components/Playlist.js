@@ -32,7 +32,6 @@ const Description = styled.Text`
   padding: 0 0 0 40px;
 `;
 const Playlist = ({songs, navigation}) => {
-  // const [playingSongKey, setPlayingSongKey] = useState(null);
   const viewSong = song => {
     navigation.navigate('ViewSong', {song});
   };

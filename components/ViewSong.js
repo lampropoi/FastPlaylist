@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, Image} from 'react-native';
+import {Image} from 'react-native';
 import {
   PlayButton,
   PauseButton,
@@ -58,18 +58,13 @@ const ViewSong = ({navigation}) => {
       song.sound,
       SoundPlayer.MAIN_BUNDLE,
       error => {
-        if (error)
-          ToastAndroid.show(
-            'Error when init SoundPlayer :(((',
-            ToastAndroid.SHORT,
-          );
-        else {
+        if (error) {
+          console.warn('Error when init SoundPlayer :(((');
+        } else {
           newSong.play(success => {
-            if (!success)
-              ToastAndroid.show(
-                'Error when play SoundPlayer :(((',
-                ToastAndroid.SHORT,
-              );
+            if (!success) {
+              console.warn('Error when play SoundPlayer :(((');
+            }
           });
         }
       },
